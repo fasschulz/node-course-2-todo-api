@@ -5,8 +5,8 @@ const {app} = require('../server');
 const {Todo} = require('../models/todo');
 
 const todos = [
-    { text: 'First test tudo' },
-    { text: 'Second test tudo' },
+    { text: 'First test todo' },
+    { text: 'Second test todo' },
 ]
 
 beforeEach((done) => {
@@ -63,4 +63,4 @@ describe('GET /todos', () => {
             .expect(res => expect(res.body.todos.length).toBe(2))
             .end(done);
     });
-})
+});
