@@ -1,36 +1,38 @@
 {
-    "name": "node-todo-api",
-    "version": "1.0.0",
-    "description": "",
-    "main": "index.js",
-    "scripts": {
-        "test": "mocha server/**/*.test.js",
-        "test-watch": "nodemon --exec 'npm test'",
-        "start": "node server/server.js"
-    },
-    "engines": {
-        "node": "6.8.1"
-    },
-    "author": "",
-    "license": "ISC",
-    "dependencies": {
-        "body-parser": "^1.15.2",
-        "express": "^4.14.0",
-        "mongodb": "^2.2.5",
-        "mongoose": "^4.5.9"
-    },
-    "devDependencies": {
-        "@types/body-parser": "0.0.33",
-        "@types/expect": "^1.13.30",
-        "@types/express": "^4.0.33",
-        "@types/mocha": "^2.2.32",
-        "@types/mongodb": "^2.1.33",
-        "@types/mongoose": "^4.5.38",
-        "@types/node": "^6.0.45",
-        "@types/supertest": "^1.1.31",
-        "expect": "^1.20.2",
-        "mocha": "^3.0.2",
-        "nodemon": "^1.10.2",
-        "supertest": "^2.0.0"
-    }
+  "name": "node-todo-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha server/**/*.test.js",
+    "test-watch": "nodemon --exec 'npm test'",
+    "start": "node server/server.js"
+  },
+  "engines": {
+    "node": "6.8.1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "lodash": "^4.15.0",
+    "mongodb": "^2.2.5",
+    "mongoose": "^4.5.9"
+  },
+  "devDependencies": {
+    "@types/body-parser": "0.0.33",
+    "@types/expect": "^1.13.30",
+    "@types/express": "^4.0.33",
+    "@types/lodash": "^4.14.37",
+    "@types/mocha": "^2.2.32",
+    "@types/mongodb": "^2.1.33",
+    "@types/mongoose": "^4.5.38",
+    "@types/node": "^6.0.45",
+    "@types/supertest": "^1.1.31",
+    "expect": "^1.20.2",
+    "mocha": "^3.0.2",
+    "nodemon": "^1.10.2",
+    "supertest": "^2.0.0"
+  }
 }
