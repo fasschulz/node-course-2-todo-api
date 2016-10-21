@@ -62,6 +62,14 @@ UserSchema.methods.generateAuthToken = function () {
     });
 }
 
+UserSchema.methods.removeToken = function (token) {
+    var user = this;
+
+    return user.update({
+        $pull: { tokens: { token } }
+    });
+}
+
 // THE METHODS BELLOW ARE MODEL METHODS, THEY CAN BE
 // ACCESSED FROM THE USER SCHEMA, WITHOUT AN INSTANCE.
 // THEY ARE STATIC, LIKE IN C#
