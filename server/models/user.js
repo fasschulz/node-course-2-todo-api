@@ -32,6 +32,7 @@ var UserSchema = new mongoose.Schema({
     }]
 });
 
+// this overrides the built in toJSON method. 
 UserSchema.methods.toJSON = function () {
     var user = this;
     var userObject = user.toObject();
